@@ -1,75 +1,58 @@
-# GoonClansEngine
+# GoonClansEngine 🏰  
+**A Minecraft Bukkit/Spigot plugin for managing clans on your server.**  
 
-GoonClansEngine is a Minecraft server plugin (for Bukkit/Spigot/Paper) that lets players create and manage clans. The plugin offers a wide range of social features—from clan creation and invitations to a clan shop for upgrades.
+![Minecraft](https://img.shields.io/badge/Minecraft-1.16%2B-brightgreen)  
+![Java](https://img.shields.io/badge/Java-8%2B-blue)  
+![Version](https://img.shields.io/badge/Version-0.9.3-yellow)  
 
-## Features
+## 🛠 **Features**  
+- **Create clans with custom tags and names.**  
+- **Invite offline players** – they will receive a notification upon login.  
+- **Open & closed clans** – public clans allow instant joining without invitations.  
+- **Clan logs system** – only the leader can see logs.  
+- **Leadership role enhancements** – logs access is transferred when leadership changes.  
+- **Admin debug commands** – modify clan size restrictions for testing.  
+- **Block PvP between clanmates & allies** – no friendly fire.  
 
-- **Clan Creation & Management:**  
-  Create clans, invite players, accept invitations, and handle join requests.
-- **Member Management:**  
-  Kick players, transfer leadership, and leave clans.
-- **Clan Customization:**  
-  Set unique tags and descriptions for your clan.
-- **Clan Shop:**  
-  Purchase upgrades such as a shared chest, increased chest capacity, home teleportation upgrade, and increased member limit.
-- **Inter-Clan Relationships:**  
-  Set relationships (friend, enemy, neutral) with other clans via friendship requests (leaders cannot change the relationship with their own clan).
-- **Chat Integration:**  
-  Display clan tags alongside player names in the player list and chat.
-- **Open Source:**  
-  This project is now open source—feel free to modify the plugin or help improve it!
+## 📜 **Commands**  
+| Command | Description |  
+|---------|------------|  
+| `/clan create <tag> <name>` | Create a new clan |  
+| `/clan invite <player>` | Invite a player (offline supported) |  
+| `/clan accept <clanName>` | Accept a clan invitation |  
+| `/clan decline <clanName>` | Decline a clan invitation |  
+| `/clan join <clanName>` | Join an open clan |  
+| `/clan kick <player>` | Remove a player from the clan |  
+| `/clan leave` | Leave your clan |  
+| `/clan disband` | Disband the clan (leader only) |  
+| `/clan transfer <player>` | Transfer leadership to another player |  
+| `/clan logs` | View clan logs (leader only) |  
+| `/clan points` | Check clan points |  
+| `/clan open` | Make the clan open to public |  
+| `/clan close` | Restrict the clan to invite-only |  
+| `/clan debug 4 <clanName>` | Enable debug mode (force 4+ members) |  
+| `/clan debug normal <clanName>` | Disable debug mode |  
+| `/clans` | View a list of clans with status tags |  
+| `/clans info <clanName>` | View clan details |  
 
-## Commands
+## 🚀 **Installation**  
+1. Download `GoonClansEngine.jar`.  
+2. Move it to your server’s `plugins/` folder.  
+3. Restart the server.  
+4. Done! Use `/clan help` to see available commands.  
 
-### Main Command: `/clan`
-- **`/clan create <tag> <name>`** – Create a new clan.
-- **`/clan invite <player>`** – Invite a player to your clan.
-- **`/clan accept <clanName>`** – Accept an invitation to a clan.
-- **`/clan join <clanName>`** – Send a join request to a clan.
-- **`/clan kick <player>`** – Kick a player from your clan.
-- **`/clan leave`** – Leave your clan.
-- **`/clan disband`** – Disband your clan (for leaders or ops only).
-- **`/clan delete <clanName>`** – Delete any clan (ops only).
-- **`/clan transfer <player>`** – Transfer leadership to another member.
-- **`/clan setdesc <description>`** – Set or change your clan’s description.
-- **`/clan settag <newTag>`** – Change your clan’s tag.
-- **`/clan rename <newName>`** – Rename your clan.
-- **`/clan logs [clanName]`** – View clan logs (leaders see their own; ops can view any).
-- **`/clan points`** – View your clan’s points.
-- **`/clan admin addpoints <clanName> <amount>`** – Add points to a clan (ops only).
-- **`/clan setrelation <otherClanName> <friend|enemy|neutral>`** – Set the relationship with another clan. *(Note: Leaders cannot set relationships with their own clan.)*
-- **`/clan friendaccept <fromClanName>`** – Accept a friendship request from another clan.
-- **`/clan shop`** – View the clan shop.
-- **`/clan shop buy <rewardNumber>`** – Purchase an upgrade from the clan shop.
-- **`/clan chest`** – Open the clan's shared chest.
+## 💡 **Compatibility**  
+- Supports **Minecraft 1.16+** (Spigot/Paper).  
+- Requires **Java 8+**.  
+- Compatible with chat and economy plugins.  
 
-### Additional Command: `/clans`
-- **`/clans`** – List all clans.
-- **`/clans info <clanName>`** – Get detailed information about a specific clan.
-- **`/clans help`** – Display help information for clan commands.
+## 🤝 **Contributing**  
+Want to improve the plugin? Open a **Pull Request** or create an **Issue**!  
 
-## Installation
+## 📜 **License**  
+This project is licensed under the **MIT License**.  
 
-1. **Download the Plugin:**  
-   Download the compiled JAR file.
-2. **Installation:**  
-   Place the JAR file into your server's `plugins` folder.
-3. **Reload/Restart:**  
-   Reload your server or execute `/reload`.
-4. **Configuration:**  
-   On first run, the plugin will generate a `clans.yml` file in its folder for further configuration if needed.
-
-## Contributing
-
-This project is now **open source**. If you want to modify the plugin or help with bug fixes and new features, feel free to fork the repository and contribute your changes. Any help or suggestions are welcome!
-
-Contact:  
-Discord: `ketsman.`
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-Enjoy the plugin and happy clanning!
+---  
+🔗 **Author:** _Your Name/Team_  
+📌 **Discord:** _Your Discord server (if applicable)_  
+📦 **Official Build:** _Link to download or GitHub Releases_
