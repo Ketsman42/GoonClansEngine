@@ -53,7 +53,6 @@ Want to improve the plugin? Open a **Pull Request** or create an **Issue**!
 This project is licensed under the **MIT License**.  
 
 ---  
-🔗 **Author:** Ketsman_Show  
-📌 **Discord:** [![Discord](https://img.shields.io/badge/Discord-Join%20Us-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/ayin)
-n 
+🔗 **Author:** Ketsman_Show
 📦 **Official Build:** soon
+[![Discord](https://img.shields.io/badge/Discord-Join%20Us-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/ayin)
