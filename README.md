@@ -3,7 +3,7 @@
 
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.16%2B-brightgreen)  
 ![Java](https://img.shields.io/badge/Java-8%2B-blue)  
-![Version](https://img.shields.io/badge/Version-0.9.3-yellow)  
+![Version](https://img.shields.io/badge/Version-0.9.4-violet)  
 
 ## 🛠 **Features**  
 - **Create clans with custom tags and names.**  
