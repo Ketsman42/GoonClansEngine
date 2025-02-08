@@ -53,6 +53,6 @@ Want to improve the plugin? Open a **Pull Request** or create an **Issue**!
 This project is licensed under the **MIT License**.  
 
 ---  
-🔗 **Author:** _Your Name/Team_  
-📌 **Discord:** _Your Discord server (if applicable)_  
-📦 **Official Build:** _Link to download or GitHub Releases_
+🔗 **Author:** Ketsman_Show  
+📌 **Discord:** discord.gg/ayin 
+📦 **Official Build:** soon
