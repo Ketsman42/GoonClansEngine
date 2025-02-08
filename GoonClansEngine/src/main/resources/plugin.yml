@@ -1,0 +1,15 @@
+name: GoonClansEngine
+version: 0.9.5-PreRelease
+main: com.yourdomain.goonclansengine.GoonClansEngine
+api-version: 1.21.4
+description: Simple ClansEngine made specially for SMP by Ketsman_Show
+commands:
+  clan:
+    description: Simple ClansEngine Created Specially for SMP by Ketsman_Show
+    usage: /clan <create | invite | join | accept | kick | leave | disband | transfer>
+  clans:
+    description: List all clans.
+    usage: /clans [help]
+  dar:
+    description: Grant permission to create a clan.
+    usage: /dar <player>
