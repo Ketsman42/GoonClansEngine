@@ -54,5 +54,6 @@ This project is licensed under the **MIT License**.
 
 ---  
 🔗 **Author:** Ketsman_Show  
-📌 **Discord:** discord.gg/ayin 
+📌 **Discord:** [![Discord](https://img.shields.io/badge/Discord-Join%20Us-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/ayin)
+n 
 📦 **Official Build:** soon
