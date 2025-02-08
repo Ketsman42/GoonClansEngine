@@ -39,7 +39,7 @@
 1. Download `GoonClansEngine.jar`.  
 2. Move it to your server’s `plugins/` folder.  
 3. Restart the server.  
-4. Done! Use `/clan help` to see available commands.  
+4. Done! Use `/clans help (color)` to see available commands and formatting.  
 
 ## 💡 **Compatibility**  
 - Supports **Minecraft 1.16+** (Spigot/Paper).  
