@@ -81,7 +81,7 @@ GoonClansEngine is an all-in-one plugin designed to bring a rich clan system to 
 |---------|-------------|
 | `/clan quest list` | Display all available daily and weekly quests with their status. |
 | `/clan quest complete <questID>` | Manually complete a quest that requires item submission (auto-tracked quests cannot be submitted manually). |
-| `/clan quest reset <daily|weekly|all>` | **(Op only)** Reset quests: daily, weekly, or both. |
+| `clan quest reset`| **(Op only)** Reset quests: daily, weekly, or both. |
 
 ### Clan Shop & Home Commands
 | Command | Description |
