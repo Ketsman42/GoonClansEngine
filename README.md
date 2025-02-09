@@ -10,7 +10,7 @@
 </div>
 
 <p align="center">
-  <img src="![GCE-0-9-6-09-02-2025](https://github.com/user-attachments/assets/36a43fa8-0ed0-4c02-a4f3-ea909497445e)
+  <img src="![GCE-0-9-6-09-02-2025](https://i.imgur.com/025nUWh.png)
 " alt="GoonClansEngine Logo" width="200"/>
 </p>
 
