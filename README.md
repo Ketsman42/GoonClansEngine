@@ -10,177 +10,178 @@
 </div>
 
 <p align="center">
-  <img src="https://i.imgur.com/placeholder.png" alt="GoonClansEngine Logo" width="200"/>
+  <img src="![GCE-0-9-6-09-02-2025](https://github.com/user-attachments/assets/36a43fa8-0ed0-4c02-a4f3-ea909497445e)
+" alt="GoonClansEngine Logo" width="200"/>
 </p>
 
-> 🚀 Мощный плагин для создания кланов с системой квестов и улучшений для вашего Minecraft сервера!
+> 🚀 A powerful clan plugin with quests and upgrades system for your Minecraft server!
 
-## 📋 Содержание
+## 📋 Table of Contents
 
-- [✨ Особенности](#-особенности)
-- [🔧 Установка](#-установка)
-- [📝 Команды](#-команды)
-- [🎮 Использование](#-использование)
-- [⚙️ Конфигурация](#%EF%B8%8F-конфигурация)
-- [🏆 Система Квестов](#-система-квестов)
-- [💎 Улучшения Клана](#-улучшения-клана)
-- [🤝 Отношения между Кланами](#-отношения-между-кланами)
-- [📜 Лицензия](#-лицензия)
-- [👥 Поддержка](#-поддержка)
+- [✨ Features](#-features)
+- [🔧 Installation](#-installation)
+- [📝 Commands](#-commands)
+- [🎮 Usage](#-usage)
+- [⚙️ Configuration](#%EF%B8%8F-configuration)
+- [🏆 Quest System](#-quest-system)
+- [💎 Clan Upgrades](#-clan-upgrades)
+- [🤝 Clan Relations](#-clan-relations)
+- [📜 License](#-license)
+- [👥 Support](#-support)
 
-## ✨ Особенности
+## ✨ Features
 
-- 🏰 **Создание Кланов**
-  - Уникальные теги с поддержкой цветов
-  - Система рангов (лидер, участники)
-  - Настраиваемое описание клана
-  - Система приглашений и заявок
+- 🏰 **Clan Creation**
+  - Unique tags with color support
+  - Rank system (leader, members)
+  - Customizable clan description
+  - Invitation and application system
 
-- 📊 **Система Очков**
-  - Заработок очков через квесты
-  - Возможность передачи очков между кланами
-  - Использование очков для улучшений
+- 📊 **Points System**
+  - Earn points through quests
+  - Points transfer between clans
+  - Use points for upgrades
 
-- 🎯 **Квесты**
-  - Ежедневные и еженедельные задания
-  - Автоматическое отслеживание прогресса
-  - Разнообразные типы заданий:
-    - Сбор ресурсов
-    - Убийство мобов
-    - Рыбалка
-    - Торговля с жителями
-    - И многое другое!
+- 🎯 **Quests**
+  - Daily and weekly tasks
+  - Automatic progress tracking
+  - Various quest types:
+    - Resource gathering
+    - Mob killing
+    - Fishing
+    - Villager trading
+    - And much more!
 
-- 🔄 **Улучшения Клана**
-  - Общий сундук клана
-  - Увеличенное хранилище
-  - Телепортация в дом клана
-  - Увеличение максимального количества участников
+- 🔄 **Clan Upgrades**
+  - Shared clan chest
+  - Increased storage
+  - Clan home teleportation
+  - Member limit increase
 
-## 🔧 Установка
+## 🔧 Installation
 
-1. Скачайте последнюю версию плагина
-2. Поместите JAR файл в папку `plugins` вашего сервера
-3. Перезапустите сервер
-4. Настройте конфигурацию в файле `config.yml`
+1. Download the latest plugin version
+2. Place the JAR file in your server's `plugins` folder
+3. Restart the server
+4. Configure settings in `config.yml`
 
-### 📋 Требования
+### 📋 Requirements
 
-- Java 17 или выше
+- Java 17 or higher
 - Paper/Spigot 1.21.4
-- Рекомендуется: PlaceholderAPI, Vault
+- Recommended: PlaceholderAPI, Vault
 
-## 📝 Команды
+## 📝 Commands
 
-### Основные команды
-| Команда | Описание |
+### Basic Commands
+| Command | Description |
 |---------|-----------|
-| `/clan create <тег> <имя>` | Создать новый клан |
-| `/clan invite <игрок>` | Пригласить игрока в клан |
-| `/clan join <клан>` | Присоединиться к клану |
-| `/clan leave` | Покинуть клан |
-| `/clans` | Список всех кланов |
+| `/clan create <tag> <name>` | Create a new clan |
+| `/clan invite <player>` | Invite a player to clan |
+| `/clan join <clan>` | Join a clan |
+| `/clan leave` | Leave current clan |
+| `/clans` | List all clans |
 
-### Управление кланом
-| Команда | Описание |
+### Clan Management
+| Command | Description |
 |---------|-----------|
-| `/clan setdesc <описание>` | Установить описание клана |
-| `/clan settag <тег>` | Изменить тег клана |
-| `/clan transfer <игрок>` | Передать лидерство |
-| `/clan kick <игрок>` | Исключить игрока |
+| `/clan setdesc <description>` | Set clan description |
+| `/clan settag <tag>` | Change clan tag |
+| `/clan transfer <player>` | Transfer leadership |
+| `/clan kick <player>` | Kick a member |
 
-### Квесты и улучшения
-| Команда | Описание |
+### Quests and Upgrades
+| Command | Description |
 |---------|-----------|
-| `/clan quest list` | Список доступных квестов |
-| `/clan quest complete <id>` | Завершить квест |
-| `/clan shop` | Открыть магазин улучшений |
+| `/clan quest list` | View available quests |
+| `/clan quest complete <id>` | Complete a quest |
+| `/clan shop` | Open upgrades shop |
 
-## 🎮 Использование
+## 🎮 Usage
 
-### 🏰 Создание клана
-1. Используйте `/clan create <тег> <имя>`
-2. Настройте описание: `/clan setdesc <описание>`
-3. Приглашайте игроков: `/clan invite <игрок>`
+### 🏰 Creating a Clan
+1. Use `/clan create <tag> <name>`
+2. Set description: `/clan setdesc <description>`
+3. Invite players: `/clan invite <player>`
 
-### 💎 Улучшения
-1. Заработайте очки через квесты
-2. Откройте магазин: `/clan shop`
-3. Приобретайте улучшения для клана
+### 💎 Upgrades
+1. Earn points through quests
+2. Open shop: `/clan shop`
+3. Purchase clan upgrades
 
-### 🎯 Квесты
-1. Просмотрите доступные квесты: `/clan quest list`
-2. Выполняйте задания
-3. Получайте награды для клана
+### 🎯 Quests
+1. View available quests: `/clan quest list`
+2. Complete tasks
+3. Receive clan rewards
 
-## ⚙️ Конфигурация
+## ⚙️ Configuration
 
 ```yaml
-# Пример конфигурации
+# Configuration example
 settings:
   max_members: 6
   quest_reset_time: 86400
   points_multiplier: 1.0
 ```
 
-## 🏆 Система Квестов
+## 🏆 Quest System
 
-### Типы квестов
-- 📅 **Ежедневные квесты**
-  - Обновляются каждые 24 часа
-  - 4 случайных квеста
-  - Меньшие награды, простые задания
+### Quest Types
+- 📅 **Daily Quests**
+  - Reset every 24 hours
+  - 4 random quests
+  - Lower rewards, simple tasks
 
-- 📆 **Еженедельные квесты**
-  - Обновляются каждые 7 дней
-  - 3 случайных квеста
-  - Большие награды, сложные задания
+- 📆 **Weekly Quests**
+  - Reset every 7 days
+  - 3 random quests
+  - Higher rewards, challenging tasks
 
-### Категории заданий
-- 🗡️ Убийство мобов
-- ⛏️ Сбор ресурсов
-- 🎣 Рыбалка
-- 🏃‍♂️ Путешествия
-- 💰 Торговля
+### Task Categories
+- 🗡️ Mob Killing
+- ⛏️ Resource Gathering
+- 🎣 Fishing
+- 🏃‍♂️ Traveling
+- 💰 Trading
 
-## 💎 Улучшения Клана
+## 💎 Clan Upgrades
 
-### Доступные улучшения
-1. 📦 **Общий сундук**
-   - Стоимость: 100 очков
-   - Доступ к общему хранилищу клана
+### Available Upgrades
+1. 📦 **Shared Chest**
+   - Cost: 100 points
+   - Access to clan storage
 
-2. 🗄️ **Двойной сундук**
-   - Стоимость: 100 очков
-   - Увеличивает размер хранилища вдвое
+2. 🗄️ **Double Chest**
+   - Cost: 100 points
+   - Doubles storage capacity
 
-3. 🏠 **Дом клана**
-   - Стоимость: 200 очков
-   - Возможность установки и телепортации
+3. 🏠 **Clan Home**
+   - Cost: 200 points
+   - Set and teleport capability
 
-4. 👥 **Увеличение слотов**
-   - Стоимость: 120 очков
-   - +2 слота для участников
+4. 👥 **Member Slots**
+   - Cost: 120 points
+   - +2 member slots
 
-## 🤝 Отношения между Кланами
+## 🤝 Clan Relations
 
-### Типы отношений
-- 🤝 Дружественные
-- ⚔️ Враждебные
-- 😐 Нейтральные
+### Relation Types
+- 🤝 Friendly
+- ⚔️ Enemy
+- 😐 Neutral
 
-### Возможности
-- Передача очков между дружественными кланами
-- Система PvP с учетом отношений
-- Совместное выполнение заданий
+### Features
+- Points transfer between friendly clans
+- PvP system with relations
+- Cooperative quest completion
 
-## 📜 Лицензия
+## 📜 License
 
-Этот проект распространяется под лицензией MIT. Подробности в файле [LICENSE](LICENSE).
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## 👥 Поддержка
+## 👥 Support
 
-- 💬 [Discord сервер](https://discord.gg/ayin)
+- 💬 [Discord Server](https://discord.gg/ayin)
 - 📧 Email: support@example.com
 - 🌐 [Wiki](https://github.com/yourusername/GoonClansEngine/wiki)
 
@@ -188,8 +189,8 @@ settings:
 
 <div align="center">
   
-### Сделано с ❤️ для Minecraft сообщества
+### Made with ❤️ for the Minecraft Community
 
 [![Discord](https://img.shields.io/discord/YOUR_DISCORD_SERVER_ID?color=7289DA&label=Discord&logo=discord&logoColor=white)](https://discord.gg/ayin)
 
-</div> 
+</div>
