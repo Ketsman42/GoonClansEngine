@@ -10,8 +10,7 @@
 </div>
 
 <p align="center">
-  <img src="![GCE-0-9-6-09-02-2025](https://i.imgur.com/025nUWh.png)
-" alt="GoonClansEngine Logo" width="200"/>
+  <img src="https://i.imgur.com/025nUWh.png" alt="GoonClansEngine Logo" width="200"/>
 </p>
 
 > 🚀 A powerful clan plugin with quests and upgrades system for your Minecraft server!
@@ -193,4 +192,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 [![Discord](https://img.shields.io/discord/YOUR_DISCORD_SERVER_ID?color=7289DA&label=Discord&logo=discord&logoColor=white)](https://discord.gg/ayin)
 
-</div>
+</div> 
