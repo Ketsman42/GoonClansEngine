@@ -1,195 +1,201 @@
 # 🏰 GoonClansEngine
 
 <div align="center">
-  
-![Version](https://img.shields.io/badge/version-0.9.6--PreRelease-blue.svg)
-![Spigot](https://img.shields.io/badge/Spigot-1.21.4-orange.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-[![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA.svg)](https://discord.gg/ayin)
-
+  [![Version](https://img.shields.io/badge/version-0.9.7--CheckPoint-blue.svg)](https://github.com/yourusername/GoonClansEngine)
+  [![Spigot](https://img.shields.io/badge/Spigot-1.21.4-orange.svg)](https://www.spigotmc.org/)
+  [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+  [![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA.svg)](https://discord.gg/ayin)
 </div>
 
 <p align="center">
-  <img src="https://i.imgur.com/025nUWh.png" alt="GoonClansEngine Logo" width="200"/>
+  <img src="https://i.imgur.com/025nUWh.png" alt="GoonClansEngine Logo" width="500"/>
 </p>
 
-> 🚀 A powerful clan plugin with quests and upgrades system for your Minecraft server!
+> **GoonClansEngine** is a powerful and feature-rich Minecraft plugin designed for creating, managing, and enhancing clans. Build your clan, complete challenging quests, upgrade your clan facilities, and enjoy unique interactive features while engaging in intense, cooperative gameplay!
 
-## 📋 Table of Contents
+## Table of Contents
 
-- [✨ Features](#-features)
-- [🔧 Installation](#-installation)
-- [📝 Commands](#-commands)
-- [🎮 Usage](#-usage)
-- [⚙️ Configuration](#%EF%B8%8F-configuration)
-- [🏆 Quest System](#-quest-system)
-- [💎 Clan Upgrades](#-clan-upgrades)
-- [🤝 Clan Relations](#-clan-relations)
-- [📜 License](#-license)
-- [👥 Support](#-support)
+- [Features](#features)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Commands](#commands)
+- [Quest System](#quest-system)
+- [Clan Upgrades & Buffs](#clan-upgrades--buffs)
+- [Clan Relations](#clan-relations)
+- [Usage](#usage)
+- [Support](#support)
+- [License](#license)
 
-## ✨ Features
+## Features
 
-- 🏰 **Clan Creation**
-  - Unique tags with color support
-  - Rank system (leader, members)
-  - Customizable clan description
-  - Invitation and application system
+- **Clan Creation & Management**
+  - Unique clan tags (with color support) and customizable clan names.
+  - Set and update clan descriptions.
+  - Invitation/application system with built-in cooldowns.
+  - Automatic chat formatting displaying clan tags.
 
-- 📊 **Points System**
-  - Earn points through quests
-  - Points transfer between clans
-  - Use points for upgrades
+- **Points & Progression System**
+  - Earn points by completing diverse quests.
+  - Use points to purchase clan upgrades and buffs.
+  - Detailed clan log system to record events and progress.
 
-- 🎯 **Quests**
-  - Daily and weekly tasks
-  - Automatic progress tracking
-  - Various quest types:
-    - Resource gathering
-    - Mob killing
-    - Fishing
-    - Villager trading
-    - And much more!
+- **Quest System**
+  - **Daily and Weekly Quests:** Engage in various tasks ranging from traveling and mining to mob slaying and leveling up.
+  - **Interactive Notifications:** When quest conditions are met, players receive a clickable chat message with a **[Complete]** button that executes `/clan quest complete <questID>`.
+  - **5-Minute Cooldown:** To avoid chat spam, each quest notification is limited to once every 5 minutes per player, with individual cooldown timers per quest.
+  - **Auto-Completion & Progress Tracking:** Seamlessly track progress for objectives like travel distance, block breaking, mob kills, and level changes.
 
-- 🔄 **Clan Upgrades**
-  - Shared clan chest
-  - Increased storage
-  - Clan home teleportation
-  - Member limit increase
+- **Clan Upgrades & Buffs**
+  - **Shared Clan Chest:** Secure storage accessible to all clan members.
+  - **Double Chest Capacity:** Expand your shared chest to store more items.
+  - **Clan Home Teleport:** Set and teleport to a clan home for easy meeting points.
+  - **Increase Member Limit:** Boost your clan's capacity by unlocking additional member slots.
+  - **Buff System:** Purchase powerful buffs that automatically apply beneficial potion effects to all online clan members.
 
-## 🔧 Installation
+- **Clan Relations**
+  - Set clan relationships as Friendly, Neutral, or Enemy.
+  - Enable cooperation or competition with features like points transfer and PvP incentives based on relations.
 
-1. Download the latest plugin version
-2. Place the JAR file in your server's `plugins` folder
-3. Restart the server
-4. Configure settings in `config.yml`
+## Installation
 
-### 📋 Requirements
+1. **Download Plugin:**
+   - Get the latest release of GoonClansEngine from the [Releases](https://github.com/yourusername/GoonClansEngine/releases) page.
 
-- Java 17 or higher
-- Paper/Spigot 1.21.4
-- Recommended: PlaceholderAPI, Vault
+2. **Setup:**
+   - Place the JAR file in your server's `plugins` folder.
+   - Restart your Minecraft server to load the plugin.
 
-## 📝 Commands
+3. **Requirements:**
+   - Java 17 or higher.
+   - Paper/Spigot 1.21.4.
+   - Recommended: PlaceholderAPI, Vault for enhanced functionality.
 
-### Basic Commands
-| Command | Description |
-|---------|-----------|
-| `/clan create <tag> <name>` | Create a new clan |
-| `/clan invite <player>` | Invite a player to clan |
-| `/clan join <clan>` | Join a clan |
-| `/clan leave` | Leave current clan |
-| `/clans` | List all clans |
+## Configuration
 
-### Clan Management
-| Command | Description |
-|---------|-----------|
-| `/clan setdesc <description>` | Set clan description |
-| `/clan settag <tag>` | Change clan tag |
-| `/clan transfer <player>` | Transfer leadership |
-| `/clan kick <player>` | Kick a member |
+GoonClansEngine comes with an extensive configuration file (`config.yml`) allowing you to fine-tune various aspects of the plugin. Customize settings such as:
 
-### Quests and Upgrades
-| Command | Description |
-|---------|-----------|
-| `/clan quest list` | View available quests |
-| `/clan quest complete <id>` | Complete a quest |
-| `/clan shop` | Open upgrades shop |
+- Quest reset timers (daily/weekly)
+- Points multipliers
+- Buff durations and costs
+- Notification cooldown timings
 
-## 🎮 Usage
-
-### 🏰 Creating a Clan
-1. Use `/clan create <tag> <name>`
-2. Set description: `/clan setdesc <description>`
-3. Invite players: `/clan invite <player>`
-
-### 💎 Upgrades
-1. Earn points through quests
-2. Open shop: `/clan shop`
-3. Purchase clan upgrades
-
-### 🎯 Quests
-1. View available quests: `/clan quest list`
-2. Complete tasks
-3. Receive clan rewards
-
-## ⚙️ Configuration
-
+Example configuration snippet:
 ```yaml
-# Configuration example
 settings:
   max_members: 6
-  quest_reset_time: 86400
+  quest_reset_time: 86400   # Reset quests every 24 hours (in seconds)
   points_multiplier: 1.0
+  notification_cooldown: 300000  # 5 minutes in milliseconds
 ```
 
-## 🏆 Quest System
+## Commands
 
-### Quest Types
-- 📅 **Daily Quests**
-  - Reset every 24 hours
-  - 4 random quests
-  - Lower rewards, simple tasks
+### Basic Commands
+| Command                            | Description                                                  |
+|------------------------------------|--------------------------------------------------------------|
+| `/clan create <tag> <name>`        | Create a new clan with the specified tag and name.           |
+| `/clan invite <player>`            | Invite a player to join your clan.                           |
+| `/clan join <clan>`                | Request to join an existing clan.                            |
+| `/clan leave`                      | Leave your current clan.                                     |
+| `/clans`                         | List all available clans.                                    |
 
-- 📆 **Weekly Quests**
-  - Reset every 7 days
-  - 3 random quests
-  - Higher rewards, challenging tasks
+### Clan Management
+| Command                            | Description                                                  |
+|------------------------------------|--------------------------------------------------------------|
+| `/clan setdesc <description>`      | Set or update your clan's description.                       |
+| `/clan settag <tag>`               | Change your clan's tag.                                      |
+| `/clan transfer <player>`          | Transfer clan leadership to another member.                  |
+| `/clan kick <player>`              | Remove a member from your clan.                              |
 
-### Task Categories
-- 🗡️ Mob Killing
-- ⛏️ Resource Gathering
-- 🎣 Fishing
-- 🏃‍♂️ Traveling
-- 💰 Trading
+### Quest & Upgrade Commands
+| Command                                   | Description                                                                                   |
+|-------------------------------------------|-----------------------------------------------------------------------------------------------|
+| `/clan quest list`                        | Display available daily and weekly quests.                                                     |
+| `/clan quest complete <questID>`          | Complete a quest (can also be done via the interactive **[Complete]** button).                   |
+| `/clan shop`                              | Open the shop to purchase clan upgrades and buffs.                                             |
 
-## 💎 Clan Upgrades
+## Quest System
 
-### Available Upgrades
-1. 📦 **Shared Chest**
-   - Cost: 100 points
-   - Access to clan storage
+The quest system is at the heart of GoonClansEngine. It keeps your clan active and engaged through various challenges:
 
-2. 🗄️ **Double Chest**
-   - Cost: 100 points
-   - Doubles storage capacity
+- **Multiple Quest Types:**
+  - **Travel:** Track the distance players move (measured in blocks).
+  - **Mine:** Monitor progress through block breaking activities.
+  - **Kill:** Engage in combat with specific mobs (e.g., Wither Skeletons, Ender Dragon).
+  - **Level:** Advance player levels to meet target criteria.
 
-3. 🏠 **Clan Home**
-   - Cost: 200 points
-   - Set and teleport capability
+- **Interactive Notifications:**
+  - When a quest is ready to be completed, players receive a green chat notification with a **[Complete]** button that, when clicked, executes the command `/clan quest complete <questID>`.
 
-4. 👥 **Member Slots**
-   - Cost: 120 points
-   - +2 member slots
+- **5-Minute Per-Quest Cooldown:**
+  - To prevent notification spam, each quest's completion message is limited to once every 5 minutes per player. Each quest maintains its own cooldown timer, so different quests can notify independently.
 
-## 🤝 Clan Relations
+- **Progress Tracking & Auto-Completion:**
+  - The plugin continuously monitors player actions (such as moving, mining, killing mobs, and leveling up) and updates quest progress automatically. Some quests complete automatically once their requirements are met.
 
-### Relation Types
-- 🤝 Friendly
-- ⚔️ Enemy
-- 😐 Neutral
+## Clan Upgrades & Buffs
 
-### Features
-- Points transfer between friendly clans
-- PvP system with relations
-- Cooperative quest completion
+Enhance your clan's capabilities by investing points earned from quests into valuable upgrades:
 
-## 📜 License
+- **Shared Clan Chest:**  
+  Unlock a centrally managed inventory for storing and sharing items among clan members.
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+- **Double Chest Capacity:**  
+  Increase the size of your shared chest to accommodate more resources.
 
-## 👥 Support
+- **Clan Home Teleport:**  
+  Purchase the ability to set a clan home, making it easier for members to regroup quickly.
 
-- 💬 [Discord Server](https://discord.gg/ayin)
-- 📧 Email: support@example.com
-- 🌐 [Wiki](https://github.com/yourusername/GoonClansEngine/wiki)
+- **Increase Member Limit:**  
+  Expand your clan's maximum member count by unlocking additional slots.
+
+- **Buff System:**  
+  Buy clan buffs that give temporary, beneficial potion effects to all online clan members. These buffs can dramatically enhance performance in battles, quests, or general gameplay.
+
+## Clan Relations
+
+Forge alliances or rivalries with other clans to enrich your gameplay experience:
+
+- **Relationship Status:**
+  - Assign each clan a relationship status: Friendly, Neutral, or Enemy.
+  
+- **Collaborative Features:**
+  - Friendly clans can transfer points, cooperate during quests, and support each other in PvP situations.
+  
+- **Competitive Elements:**
+  - Engage in clan-versus-clan battles and competitions based on predefined relations.
+
+## Usage
+
+1. **Creating & Managing Your Clan:**
+   - Start by creating your clan with `/clan create <tag> <name>`.
+   - Use various management commands to update your clan's description, invite new members, or adjust your clan tag.
+
+2. **Earning & Spending Points:**
+   - Complete daily and weekly quests to earn valuable points.
+   - Invest points within the clan shop to unlock upgrades and purchase powerful buffs.
+
+3. **Participate in Quests:**
+   - Use `/clan quest list` to view all available quests.
+   - When a quest's conditions are met, simply click the interactive **[Complete]** button in the chat or execute the complete command manually.
+
+4. **Collaborative Gameplay:**
+   - Work with your clan members to tackle challenging objectives, accumulate points, and enjoy the benefits of upgraded clan facilities.
+
+## Support
+
+If you encounter any issues or have any questions regarding GoonClansEngine, please use the following support channels:
+
+- **Discord Server:** [Join our Discord](https://discord.gg/ayin)
+- **Wiki:** [GoonClansEngine Wiki](https://github.com/yourusername/GoonClansEngine/wiki)
+- **Email:** support@example.com
+
+## License
+
+GoonClansEngine is available under the [MIT License](LICENSE).
 
 ---
 
 <div align="center">
-  
-### Made with ❤️ for the Minecraft Community
-
-[![Discord](https://img.shields.io/discord/YOUR_DISCORD_SERVER_ID?color=7289DA&label=Discord&logo=discord&logoColor=white)](https://discord.gg/ayin)
-
+  <span>Made with ❤️ for the Minecraft Community</span>
 </div> 
